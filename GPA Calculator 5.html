@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function updateOutput() { 
+		//get form
+	var form = document.getElementById("calc");
+		//get output
+	var out = form.elements["z"];
+	var ce = form.elements["f"];
+		//get two numbers
+	var num1 = parseInt(form.elements["ap"].value);
+	var num2 = parseInt(form.elements["a"].value);
+	var num3 = parseInt(form.elements["am"].value);
+	var num4 = parseInt(form.elements["bp"].value);
+	var num5 = parseInt(form.elements["b"].value);
+	var num6 = parseInt(form.elements["bm"].value);
+	var num7 = parseInt(form.elements["cp"].value);
+	var num8 = parseInt(form.elements["c"].value);
+	var num9 = parseInt(form.elements["cm"].value);
+	var num10 = parseInt(form.elements["dp"].value);
+	var num11 = parseInt(form.elements["d"].value);
+	var num12 = parseInt(form.elements["op"].value);
+	ce.value = (num1+num2+num3+num4+num5+num6+num7+num8+num9+num10+num11)
+	
+		//get class number
+	var operator = parseInt(form.elements["op"].value);
+		//change division to correspond to class number
+	switch(operator)
+
+	{
+		//7 classes
+		case 0:
+		out.value = (((num1*14)+(num2*13)+(num3*12)+(num4*11)+(num5*10)+(num6*9)+(num7*8)+(num8*7)+(num9*6)+(num10*5)+(num11*4))/1).toFixed(3);
+	  	break;
+	  	//8 classes
+		case 1: out.value = (((num1*14)+(num2*13)+(num3*12)+(num4*11)+(num5*10)+(num6*9)+(num7*8)+(num8*7)+(num9*6)+(num10*5)+(num11*4))/1).toFixed(3);
+		break;
+		default: out.value = (((num1*14)+(num2*13)+(num3*12)+(num4*11)+(num5*10)+(num6*9)+(num7*8)+(num8*7)+(num9*6)+(num10*5)+(num11*4))/num12).toFixed(3);
+	  	break;
+	}
+}
+
+</script>
+</head>
+<body>
+<font face = "Verdana" size = "6"><strong>Heathfield High GPA Calculator</strong></font>
+<form id="calc" oninput="updateOutput()">
+<br>
+ <font face = "Calibri">
+<div class="lessonselect"><strong>How many classes do you have? </strong> </div>
+<input name="op" onchange="updateOutput()" type="number" value="0"/>
+<div class="lessonselect"> <br>
+  <strong> Calculate</strong></div>
+<div class="aplus"> A+ </div>
+<input name="ap" type="number" value="0" />
+<div class="a">A</div>
+<input name="a" type="number" value="0" />
+<div class="aminus">A-</div>
+<input name="am" type="number" value="0" />
+<div class="bplus">B+</div>
+<input name="bp" type="number" value="0" />
+<div class="b">B</div>
+<input name="b" type="number" value="0" />
+<div class="bminus">B-</div>
+<input name="bm" type="number" value="0" />
+<div class="cplus">C+</div>
+<input name="cp" type="number" value="0" />
+<div class="c">C</div>
+<input name="c" type="number" value="0" />
+<div class="cminus">C-</div>
+<input name="cm" type="number" value="0" />
+<div class="dplus">D+</div>
+<input name="dp" type="number" value="0" />
+<div class="d">D</div>
+<input name="d" type="number" value="0" /><br> <br> </font>
+<font face = "Verdana" size = "3"><strong style="font-size:150%">Your GPA Is: 
+<output name="z" for="ap a am bp b bm">0</output></strong><text>/14</text><br>
+<font face = "Calibri" size = "2"><text>From</text> <output name="f" for="classesenteredvariable">0</output> classes
+</font>
+</form> 
+
+</body>
+</html>
