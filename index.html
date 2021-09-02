@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" class="u-responsive-xl"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Heathfield HSGPA Calculator">
+    <meta name="description" content="Calculates the GPA for Heathfield High School reports">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Heathfield High School GPA Calculator</title>
+    <link rel="stylesheet" href="Heathfield%20High%20School%20GPA%20Calculator_files/nicepage.css" media="screen">
+<link rel="stylesheet" href="Heathfield%20High%20School%20GPA%20Calculator_files/HHS-GPA-Calculator.css" media="screen">
+    <script class="u-script" type="text/javascript" src="Heathfield%20High%20School%20GPA%20Calculator_files/jquery.js" defer="defer"></script>
+    <script class="u-script" type="text/javascript" src="Heathfield%20High%20School%20GPA%20Calculator_files/nicepage.js" defer="defer"></script>
+    <meta name="generator" content="Nicepage 3.23.2, nicepage.com">
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="Heathfield%20High%20School%20GPA%20Calculator_files/css.css">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/gpacalc2.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Heathfield High School GPA Calculator">
+    <meta property="og:description" content="Calculates the GPA for Heathfield High School reports">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="Home.html" data-home-page-title="HHS GPA Calculator" class="u-body">
+<section class="u-align-center u-clearfix u-section-1" id="sec-8192">
+  <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        <div class="d">&nbsp;</div>
+        <div class="u-custom-html-1">
+          <script type="text/javascript"> function updateOutput() { 
+		//get form
+	var form = document.getElementById("calc");
+		//get output
+	var out = form.elements["z"];
+	var ce = form.elements["f"];
+		//get two numbers
+	var num1 = parseInt(form.elements["ap"].value);
+	var num2 = parseInt(form.elements["a"].value);
+	var num3 = parseInt(form.elements["am"].value);
+	var num4 = parseInt(form.elements["bp"].value);
+	var num5 = parseInt(form.elements["b"].value);
+	var num6 = parseInt(form.elements["bm"].value);
+	var num7 = parseInt(form.elements["cp"].value);
+	var num8 = parseInt(form.elements["c"].value);
+	var num9 = parseInt(form.elements["cm"].value);
+	var num10 = parseInt(form.elements["dp"].value);
+	var num11 = parseInt(form.elements["d"].value);
+	var num12 = parseInt(form.elements["op"].value);
+	var num13 = parseInt(form.elements["dm"].value);
+	ce.value = (num1+num2+num3+num4+num5+num6+num7+num8+num9+num10+num11+num13)
+	
+		//get class number
+	var operator = parseInt(form.elements["op"].value);
+		//change division to correspond to class number
+	switch(operator)
+	{
+		//7 classes
+		case 0:
+		out.value = (((num1*14)+(num2*13)+(num3*12)+(num4*11)+(num5*10)+(num6*9)+(num7*8)+(num8*7)+(num9*6)+(num10*5)+(num11*4)+(num13*3))/1).toFixed(3);
+	  	break;
+	  	//8 classes
+		case 1: out.value = (((num1*14)+(num2*13)+(num3*12)+(num4*11)+(num5*10)+(num6*9)+(num7*8)+(num8*7)+(num9*6)+(num10*5)+(num11*4)+(num13*3))/1).toFixed(3);
+		break;
+		default: out.value = (((num1*14)+(num2*13)+(num3*12)+(num4*11)+(num5*10)+(num6*9)+(num7*8)+(num8*7)+(num9*6)+(num10*5)+(num11*4)+(num13*3))/num12).toFixed(3);
+	  	break;
+	}
+} </script>
+          <font size="6" face="Verdana">
+			  <div></div>
+            <strong>Heathfield High School GPA Calculator</strong>
+          </font>
+          <form id="calc" oninput="updateOutput()">
+            <br>
+            <font face="Calibri">
+              <div class="lessonselect">
+                <strong>How many classes do you have? </strong>
+              </div>
+              <input name="op" onchange="updateOutput()" type="number" value="0">
+              <div class="lessonselect">
+                <br>
+                <strong> Calculate</strong>
+              </div>
+            <text>A+&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </text>
+<text>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </text>
+              <text>A- </text>
+              <div class="aplus"></div>
+            <input name="ap" type="number" value="0">
+              <input name="a" type="number" value="0">
+              <input name="am" type="number" value="0">
+            </font>
+            
+            <font face="Calibri">
+              </font>
+            <div class="d">&nbsp;</div>
+            <font face="Calibri">
+			  <div class="bplus">B+&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </text>
+				  <text>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B-</div>
+<input name="bp" type="number" value="0">
+              <input name="b" type="number" value="0">
+            <input name="bm" type="number" value="0">
+            </font>
+            <div class="cminus">&nbsp;</div>
+            <font face="Calibri">
+<div class="b">C+&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </text>
+  <text>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C-</div>
+<div class="bminus">
+  <input name="cp" type="number" value="0">
+  <input name="c" type="number" value="0">
+<input name="cm" type="number" value="0">
+</div>
+            </font>
+            <div class="dplus">&nbsp;</div>
+            <font face="Calibri">
+<div class="cplus">D+&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </text>
+  <text>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D-</div>
+<input name="dp" type="number" value="0">
+<input name="d" type="number" value="0">
+<input name="dm" type="number" value="0">
+<br>
+              <br>
+            </font>
+            <font size="3" face="Verdana">
+              <strong style="font-size:150%">Your GPA Is: <output name="z" for="ap a am bp b bm">0</output>
+            </strong>
+              <text>/14</text>
+              <br>
+              <font size="2" face="Calibri">
+                <text>From</text>
+                <output name="f" for="classesenteredvariable">0</output> classes 
+              </font>
+            </font>
+          </form>
+    </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-ef5c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+<p class="u-small-text u-text u-text-variant u-text-1"><a href="https://github.com/JoshNewmann/HeathfieldHS_GPA_Calculator">Github</a><br>
+      </p>
+<p class="u-small-text u-text u-text-variant u-text-1">GPA Calculator 6</p>
+<p class="u-small-text u-text u-text-variant u-text-1"></p>
+    </div></footer>
+</body></html>
