@@ -6,3 +6,4 @@ Everything runs locally in the browser, nothing you input is sent to a server.
 
 ![Screenshot of website](https://github.com/JoshNewmann/Heathfield-High-School-GPA-Calculator/assets/41480027/57c35e81-fda2-4f0f-b986-4950f06e9473)
 
+Available at https://gpa.joshnewman6.com/
