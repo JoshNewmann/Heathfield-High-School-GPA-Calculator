@@ -1,0 +1,155 @@
+/*style.css*/
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/WOFF2/OpenSans-Bold.woff2") format("woff2"), url("./fonts/WOFF/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/WOFF2/OpenSans-Regular.woff2") format("woff2"), url("./fonts/WOFF/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3.5vh;
+}
+
+/* Styling for div containing the GPA calculator */
+
+#container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#gpa-wrap {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+.last-row td {
+    border-bottom: none;
+}
+
+/* Input Styling */
+
+input {
+    width: 82.5%;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 0%;
+}
+
+input:focus {
+    border-color: #8080ff;
+    box-shadow: inset 0 0 5px rgba(128, 128, 255, 0.5);
+}
+
+/* Results Styling */
+
+#results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#results span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #404040;
+}
+
+@media screen and (max-width: 650px) {
+    #container {
+        width: 100%;
+    }
+
+    #gpa-wrap {
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin-right: 15px;
+    }
+    input {
+        padding-left: 5px;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    td {
+        padding-right: 0px;
+    }
+
+    #results {
+        flex-direction: column;
+    }
+
+    .result {
+        margin-bottom: 5px;
+    }
+}
+
+/*GitHub and Reset Links*/
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer a,
+.footerlink a,
+.footer_item a {
+    color: #666666;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: opacity .15s ease, transform .15s ease;
+}
+
+#footer a:hover,
+.footerlink:hover a,
+.footer_item:hover a {
+    color: #404040;
+    opacity: .6;
+    -webkit-transform: skewX(-10deg) translateZ(0);
+    transform: skewX(-10deg) translateZ(0);
+}
+
+.footerlink a,
+.footer_item a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
