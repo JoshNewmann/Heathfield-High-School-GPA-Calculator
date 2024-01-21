@@ -77,6 +77,7 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 #results span {
@@ -94,9 +95,6 @@ input:focus {
         margin: 0 auto;
     }
 
-    h1 {
-        margin-right: 15px;
-    }
     input {
         padding-left: 5px;
         margin: 0 auto;
@@ -126,6 +124,7 @@ input:focus {
     padding: 10px;
     display: flex;
     justify-content: center;
+    margin-left: -17.5px;
 }
 
 #footer a,
