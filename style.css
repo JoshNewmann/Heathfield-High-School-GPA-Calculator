@@ -20,8 +20,15 @@ body {
 h1 {
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 3.5vh;
+}
+
+@media screen and (min-width: 650px) {    
+    h1 {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 3.5vh;
+    }
 }
 
 /* Styling for div containing the GPA calculator */
@@ -151,4 +158,56 @@ input:focus {
 .footer_item a {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+#infobuttons {
+    display: none;
+}
+
+@media screen and (max-height: 670px) {
+    #footer {
+        display: none;
+        transition: 0.5s;
+    }
+
+    #infobuttons {
+        display: block;
+    }
+}
+
+.reset-button {
+    right: 20px;
+}
+
+.github-button {
+    left: 20px;
+}
+
+.github-button,
+.reset-button {
+    position: fixed;
+    bottom: 20px;
+    background-color: #404040;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0;
+    z-index: 1;
+}
+
+.github-button:hover,
+.reset-button:hover {
+    background-color: #262626; /* Darker GitHub color on hover */
+}
+
+.github-button svg,
+.reset-button svg {
+    width: 18px; /* Adjust the size of the SVG icon */
+    height: 18px;
 }

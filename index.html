@@ -23,7 +23,6 @@
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="msapplication-TileColor" content="#a8dadc" />
         <meta name="msapplication-config" content="/icons/browserconfig.xml" />
-        <meta name="theme-color" content="#a8dadc" />
     </head>
     <body>
         <h1>Heathfield High School GPA Calculator</h1>
@@ -36,6 +35,14 @@
                 <div class="result">Average Grade: <span id="average-grade">NA</span></div>
                 <div class="result">GPA: <span id="gpa-average">0</span> / 14</div>
             </div>
+        </div>
+        <div id="infobuttons">
+            <a href="https://github.com" class="github-button">
+                <img src="icons/github.svg" alt="GitHub Icon">
+            </a>
+            <a href="" onclick="resetInputs()" class="reset-button">
+                <img src="icons/refresh-reverse.svg" alt="Refresh Icon">
+            </a>
         </div>
         <div id="footer">
             <div class="footer_item"><a class="footerlink" href="" onclick="resetInputs()">Reset</a></div>
