@@ -2,7 +2,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/license-mit.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/does-not-contain-treenuts.svg)](https://forthebadge.com)
 
-A simple GPA calculator for Heathfield High School students to calculate their GPA and find averages which can be used to predict grades.
+A simple GPA calculator for [Heathfield High School](https://hhs.sa.edu.au) students to calculate their GPA and find averages which can be used to predict grades.
 
 Everything runs locally in the browser, nothing you input is sent to a server.
 
